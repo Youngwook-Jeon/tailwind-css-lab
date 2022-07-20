@@ -2,6 +2,33 @@
 @tailwind components;
 @tailwind utilities;
 
-.display-none{
-    @apply hidden;
+.display-none {
+  @apply hidden;
+}
+
+@layer base {
+  h1 {
+    @apply text-2xl;
+  }
+}
+
+@layer utilities {
+  .text-body {
+    font-size: 20px;
+  }
+}
+
+@layer components {
+  .btn {
+    @apply rounded-xl
+             hover:text-white hover:border-transparent focus:outline-none focus:ring-4 focus:ring-red-500 focus:ring-offset-2;
+  }
+
+  .btn-green {
+    @apply px-4 py-1 border border-cyan-500 text-sm text-green-400 font-medium bg-green-900 hover:bg-green-400;
+  }
+
+  .btn-red {
+    @apply px-4 py-1 border border-cyan-500 text-sm text-red-400 font-medium bg-red-900 hover:bg-red-300;
+  }
 }
