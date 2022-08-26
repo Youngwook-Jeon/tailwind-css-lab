@@ -592,6 +592,14 @@ select {
   outline: 1px auto -webkit-focus-ring-color;
 }
 
+body {
+  font-family: Poppins;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: Roboto;
+}
+
 *, ::before, ::after {
   --tw-border-spacing-x: 0;
   --tw-border-spacing-y: 0;
@@ -763,6 +771,21 @@ select {
   .container {
     max-width: 1200px;
   }
+}
+
+.size-selector input:checked + label {
+  --tw-bg-opacity: 1;
+  background-color: rgb(253 61 87 / var(--tw-bg-opacity));
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+.color-selector input:checked + label {
+  --tw-ring-offset-shadow: var(--tw-ring-inset) 0 0 0 var(--tw-ring-offset-width) var(--tw-ring-offset-color);
+  --tw-ring-shadow: var(--tw-ring-inset) 0 0 0 calc(2px + var(--tw-ring-offset-width)) var(--tw-ring-color);
+  box-shadow: var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow, 0 0 #0000);
+  --tw-ring-opacity: 1;
+  --tw-ring-color: rgb(253 61 87 / var(--tw-ring-opacity));
 }
 
 .invisible {
@@ -942,6 +965,10 @@ select {
   height: 2.25rem;
 }
 
+.h-6 {
+  height: 1.5rem;
+}
+
 .w-32 {
   width: 8rem;
 }
@@ -964,6 +991,10 @@ select {
 
 .w-9 {
   width: 2.25rem;
+}
+
+.w-6 {
+  width: 1.5rem;
 }
 
 .flex-grow {
