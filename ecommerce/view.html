@@ -195,6 +195,40 @@
     </div>
     <!-- End BreadCrum -->
 
+    <!-- Product View -->
+    <div class="container pt-4 pb-6 grid lg:grid-cols-2 gap-6">
+        <!-- Product Image -->
+        <div>
+            <div>
+                <img id="main-img" src="/images/products/product12.jpg" class="w-full" />
+            </div>
+
+            <div class="grid grid-cols-5 gap-4 mt-4">
+                <div>
+                    <img src="/images/products/product12.jpg" class="single-img w-full cursor-pointer border border-primary" />
+                </div>
+
+                <div>
+                    <img src="/images/products/product2.jpg" class="single-img w-full cursor-pointer border" />
+                </div>
+
+                <div>
+                    <img src="/images/products/product3.jpg" class="single-img w-full cursor-pointer border" />
+                </div>
+
+                <div>
+                    <img src="/images/products/product4.jpg" class="single-img w-full cursor-pointer border" />
+                </div>
+
+                <div>
+                    <img src="/images/products/product5.jpg" class="single-img w-full cursor-pointer border" />
+                </div>
+            </div>
+        </div>
+        <!-- End Product Image -->
+    </div>
+    <!-- End Product View -->
+
     <footer class="bg-white pt-16 pb-12 border-t border-gray-100">
         <div class="container">
             <div class="xl:grid xl:grid-cols-3 xl:gap-8">
@@ -311,6 +345,26 @@
             </div>
         </div>
     </div>
+
+    <script>
+        let mainImg = document.getElementById('main-img');
+        let imgBars = document.getElementsByClassName('single-img');
+
+        for (let imgBar of imgBars) {
+            imgBar.addEventListener('click', function() {
+                clearActive();
+                let imgPath = this.getAttribute('src');
+                mainImg.setAttribute('src', imgPath);
+                this.classList.add('border-primary');
+            })
+        }
+
+        function clearActive() {
+            for (let imgBar of imgBars) {
+                imgBar.classList.remove('border-primary');
+            }
+        }
+    </script>
 
     <script>
         let menuBar = document.querySelector('#menuBar');
