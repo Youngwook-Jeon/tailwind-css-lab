@@ -181,152 +181,105 @@
             <span class="text-sm text-gray-500">
                 <i class="fas fa-chevron-right"></i>
             </span>
-            <p class="text-gray-500 font-medium uppercase">My Wishlist</p>
+            <p class="text-gray-500 font-medium uppercase">Checkout</p>
         </div>
     </div>
     <!-- End BreadCrum -->
 
-    <!-- Account Wrapper -->
-    <div class="container lg:grid grid-cols-12 items-start gap-6 pt-4 pb-16">
-        <!-- Sidebar -->
-        <div class="col-span-3">
-            <!-- User Profile -->
-            <div class="px-4 py-3 shadow flex bg-gray-100 items-center gap-4">
-                <div class="flex-shrink-0">
-                    <img src="/images/products/product1.jpg" class="rounded-full w-14 h-14 p-1 border border-gray-200 object-cover" />
-                </div>
-                <div>
-                    <p class="text-gray-600">Hello</p>
-                    <h4 class="text-gray-800 capitalize font-semibold">Lucas Jeon</h4>
-                </div>
-            </div>
-            <!-- End User Profile -->
+    <!-- Checkout Wrapper -->
+    <div class="container lg:grid grid-cols-12 gap-6 items-center pb-16 pt-4">
+        <!-- Checkout Form -->
+        <div class="lg:col-span-8 border border-gray-300 px-4 py-4 rounded bg-gray-100">
+            <form method="" action="">
+                <h3 class="text-lg font-medium capitalize mb-4">Checkout</h3>
 
-            <!-- Profile Link -->
-            <div class="mt-6 bg-gray-100 shadow rounded p-4 divide-y divide-gray-200 space-y-4 text-gray-600">
-                <!-- Single Link -->
-                <div class="space-y-1 pl-8">
-                    <a href="#" class="relative text-base font-medium capitalize hover:text-primary transition block text-primary">
-                        Manage Account
-                        <span class="absolute -left-8 top-0 text-base">
-                            <i class="far fa-address-card"></i>
-                        </span>
-                    </a>
-                    <a href="#" class="hover:text-primary transition capitalize block">Profile Information</a>
-                    <a href="#" class="hover:text-primary transition capitalize block">Manage Address</a>
-                    <a href="#" class="hover:text-primary transition capitalize block">Change Password</a>
-                </div>
-                <!-- End Single Link -->
+                <div class="space-y-4">
+                    <!-- Single Input -->
+                    <div class="grid sm:grid-cols-2 gap-4">
+                        <div>
+                            <label class="text-gray-600 mb-2 block">
+                                First Name <span class="text-primary">*</span>
+                            </label>
+                            <input type="text" class="input-box" />
+                        </div>
 
-                <!-- Single Link -->
-                <div class="space-y-1 pl-8 pt-4">
-                    <a href="#" class="relative text-base font-medium capitalize hover:text-primary transition block text-primary">
-                        My Order History
-                        <span class="absolute -left-8 top-0 text-base">
-                            <i class="fas fa-gift"></i>
-                        </span>
-                    </a>
-                    <a href="#" class="hover:text-primary transition capitalize block">My Returns</a>
-                    <a href="#" class="hover:text-primary transition capitalize block">My Cancellations</a>
-                    <a href="#" class="hover:text-primary transition capitalize block">My Review</a>
-                </div>
-                <!-- End Single Link -->
+                        <div>
+                            <label class="text-gray-600 mb-2 block">
+                                Last Name <span class="text-primary">*</span>
+                            </label>
+                            <input type="text" class="input-box" />
+                        </div>
+                    </div>
+                    <!-- End Single Input -->
 
-                <!-- Single Link -->
-                <div class="space-y-1 pl-8 pt-4">
-                    <a href="#" class="relative text-base font-medium capitalize hover:text-primary transition block text-primary">
-                        Payment Method
-                        <span class="absolute -left-8 top-0 text-base">
-                            <i class="far fa-credit-card"></i>
-                        </span>
-                    </a>
-                    <a href="#" class="hover:text-primary transition capitalize block">Voucher</a>
-                </div>
-                <!-- End Single Link -->
+                    <!-- Single Input -->
+                    <div>
+                        <label class="text-gray-600 mb-2 block">
+                            Company Name
+                        </label>
+                        <input type="text" class="input-box" />
+                    </div>
+                    <!-- End Single Input -->
 
-                <!-- Single Link -->
-                <div class="space-y-1 pl-8 pt-4">
-                    <a href="#" class="relative text-base font-medium capitalize hover:text-primary transition block text-primary">
-                        My Wishlist
-                        <span class="absolute -left-8 top-0 text-base">
-                            <i class="far fa-heart"></i>
-                        </span>
-                    </a>
-                </div>
-                <!-- End Single Link -->
+                    <!-- Single Input -->
+                    <div>
+                        <label class="text-gray-600 mb-2 block">
+                            Country/Region <span class="text-primary">*</span>
+                        </label>
+                        <input type="text" class="input-box" />
+                    </div>
+                    <!-- End Single Input -->
 
-                <!-- Single Link -->
-                <div class="space-y-1 pl-8 pt-4">
-                    <a href="#" class="relative text-base font-medium capitalize hover:text-primary transition block text-primary">
-                        Logout
-                        <span class="absolute -left-8 top-0 text-base">
-                            <i class="fas fa-sign-out-alt"></i>
-                        </span>
-                    </a>
+                    <!-- Single Input -->
+                    <div>
+                        <label class="text-gray-600 mb-2 block">
+                            Street Address <span class="text-primary">*</span>
+                        </label>
+                        <input type="text" class="input-box" />
+                    </div>
+                    <!-- End Single Input -->
+
+                    <!-- Single Input -->
+                    <div>
+                        <label class="text-gray-600 mb-2 block">
+                            Town/City <span class="text-primary">*</span>
+                        </label>
+                        <input type="text" class="input-box" />
+                    </div>
+                    <!-- End Single Input -->
+
+                    <!-- Single Input -->
+                    <div>
+                        <label class="text-gray-600 mb-2 block">
+                            Zip Code <span class="text-primary">*</span>
+                        </label>
+                        <input type="text" class="input-box" />
+                    </div>
+                    <!-- End Single Input -->
+
+                    <!-- Single Input -->
+                    <div>
+                        <label class="text-gray-600 mb-2 block">
+                            Phone Number <span class="text-primary">*</span>
+                        </label>
+                        <input type="text" class="input-box" />
+                    </div>
+                    <!-- End Single Input -->
+
+                    <!-- Single Input -->
+                    <div>
+                        <label class="text-gray-600 mb-2 block">
+                            Email Address <span class="text-primary">*</span>
+                        </label>
+                        <input type="email" class="input-box" />
+                    </div>
+                    <!-- End Single Input -->
                 </div>
-                <!-- End Single Link -->
-            </div>
-            <!-- End Profile Link -->
+            </form>
         </div>
-        <!-- End Sidebar -->
-
-        <!-- Account Content -->
-        <div class="col-span-9 mt-6 lg:mt-0 space-y-4" >
-            <!-- Single Wishlist -->
-            <div class="flex items-center md:justify-between gap-4 md:gap-6 p-4 border border-gray-300 rounded bg-gray-100 flex-wrap md:flex-nowrap">
-                <div class="w-28 flex-shrink-0">
-                    <img src="/images/products/product3.jpg" class="w-full" />
-                </div>
-
-                <div class="md:w-1/3 w-full">
-                    <h2 class="text-gray-800 mb-1 xl:text-xl text-lg font-medium uppercase">GUYER CHAIR</h2>
-                    <p class="text-gray-500 text-sm">Availability : <span class="text-green-600">In Stock</span></p>
-                </div>
-
-                <div>
-                    <p class="text-primary text-lg font-semibold">$432</p>
-                </div>
-
-                <a href="#" class="ml-auto md:ml-0 block px-6 py-2 text-center text-sm text-white bg-primary 
-                border border-primary rounded hover:bg-transparent hover:text-primary transition uppercase font-roboto font-medium">
-                    Add to Cart
-                </a>
-
-                <div class="text-gray-700 hover:text-primary cursor-pointer">
-                    <i class="fas fa-trash"></i>
-                </div>
-            </div>
-            <!-- End Single Wishlist -->
-
-            <!-- Single Wishlist -->
-            <div class="flex items-center md:justify-between gap-4 md:gap-6 p-4 border border-gray-300 rounded bg-gray-100 flex-wrap md:flex-nowrap">
-                <div class="w-28 flex-shrink-0">
-                    <img src="/images/products/product5.jpg" class="w-full" />
-                </div>
-
-                <div class="md:w-1/3 w-full">
-                    <h2 class="text-gray-800 mb-1 xl:text-xl text-lg font-medium uppercase">GUYER CHAIR</h2>
-                    <p class="text-gray-500 text-sm">Availability : <span class="text-red-600">Out of Stock</span></p>
-                </div>
-
-                <div>
-                    <p class="text-primary text-lg font-semibold">$543</p>
-                </div>
-
-                <a href="#" class="ml-auto md:ml-0 block px-6 py-2 text-center text-sm text-white bg-primary 
-                border border-primary rounded hover:bg-transparent hover:text-primary transition uppercase font-roboto font-medium cursor-not-allowed bg-opacity-80">
-                    Add to Cart
-                </a>
-
-                <div class="text-gray-700 hover:text-primary cursor-pointer">
-                    <i class="fas fa-trash"></i>
-                </div>
-            </div>
-            <!-- End Single Wishlist -->
-        </div>
-        <!-- End Account Content -->
+        <!-- End Checkout Form -->
     </div>
-    <!-- End Account Wrapper -->
+    <!-- End Checkout Wrapper -->
 
     <footer class="bg-white pt-16 pb-12 border-t border-gray-100">
         <div class="container">
