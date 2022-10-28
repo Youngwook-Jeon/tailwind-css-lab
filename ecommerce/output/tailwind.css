@@ -1005,16 +1005,16 @@ h1, h2, h3, h4, h5, h6 {
   margin-bottom: 0.25rem;
 }
 
-.mr-2 {
-  margin-right: 0.5rem;
-}
-
 .mb-8 {
   margin-bottom: 2rem;
 }
 
 .mt-10 {
   margin-top: 2.5rem;
+}
+
+.mr-2 {
+  margin-right: 0.5rem;
 }
 
 .block {
@@ -1119,6 +1119,10 @@ h1, h2, h3, h4, h5, h6 {
   width: 50%;
 }
 
+.w-16 {
+  width: 4rem;
+}
+
 .w-6 {
   width: 1.5rem;
 }
@@ -1133,10 +1137,6 @@ h1, h2, h3, h4, h5, h6 {
 
 .w-28 {
   width: 7rem;
-}
-
-.w-16 {
-  width: 4rem;
 }
 
 .max-w-lg {
@@ -1621,16 +1621,16 @@ h1, h2, h3, h4, h5, h6 {
   padding-bottom: 0.75rem;
 }
 
+.pb-24 {
+  padding-bottom: 6rem;
+}
+
 .pb-6 {
   padding-bottom: 1.5rem;
 }
 
 .pb-5 {
   padding-bottom: 1.25rem;
-}
-
-.pb-24 {
-  padding-bottom: 6rem;
 }
 
 .text-left {
